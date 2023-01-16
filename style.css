@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #fdbc43;
+}
+
+/*!!!!!!!!!!!!!!!HEADER & NAV & HOME!!!!!!!!!!!*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 2.5rem;
+    background-color: #3936f3;
+    color: #ffffff; 
+}
+
+.logo{
+    width: 11% ;
+    height: 11rem;
+}
+
+nav{
+    padding-block: 5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color:#f2f2f2;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+#button{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 2rem;
+    background-color: #3936f3;
+    border: 0.2rem solid #04019e;
+    padding: 0.8rem;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#button:hover{
+    color: #f2f2f2;
+    background-color: #04019e;
+}
+
+#home-photo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: url(./Assets/Foto-Home.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 55rem;
+}
+
+.text-home{
+    opacity: 78%;
+    width: 400px;
+    background-color: #c8e61f;
+    padding: 3rem;
+    border-radius: 1.5rem 5rem;
+}
+
+.text-home h4{
+    font-size: 3.2rem;
+}
+
+.text-home p{
+    font-size: 2rem;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!! SOBRE !!!!!!!!!!!!!!!!!!!!*/
+
+#about{
+    background-color: #f2f2f2;
+}
+
+.title-about{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #fdbc43;
+    color: white;
+}
+
+.container-about{
+    display: flex;
+    padding: 4rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo-about{
+    width: 60rem;
+    height: 30.5rem;
+    border-radius: 1.5rem;
+}
+
+.container-about p{
+    width: 50rem ;
+    background-color: #7FFFD4;
+    padding: 3rem;
+    border-radius: 1.5rem 1rem;
+    box-shadow: black 0.3rem 0.3rem;
+    font-size: 2rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! SERVIÇOS !!!!!!!!!!!!!!!!!!!!!!!!!!!! */ 
+#services{
+    background-color: #f2f2f2;
+}
+
+.title-services h2{
+    background-color: #fdbc43 ;
+    color: white;
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.container-services{
+    padding-block: 15rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20rem;
+}
+
+.card-services{
+    padding: 2rem;
+    text-align: left;
+    border-radius: 1.5rem;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;  
+    width: 30%;
+}
+
+
+.wrapper{
+    margin-inline: auto;
+    padding-inline: 3rem;
+}
+
+
+@media(min-width: 1366px){
+    .container-services{
+        padding-inline: 25rem;
+    }
+}
+
+
+.card-services h4{  
+    font-size: 2rem;
+}
+
+.card-services p{
+    font-size: 1.6rem;
+}
+
+.card-services img{
+    width: 34px;
+    height: 34px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!! INSTALLATIONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
+
+#installations{
+    background-color: #f2f2f2;
+}
+
+.title-installations{
+    background-color: #fdbc43 ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+h2{
+    font-size: 4.5rem;
+}
+
+.installations-photos{
+    padding-block: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.installations-photos img{
+    width: 30%;
+    border-radius: 2rem;
+    box-shadow: black 0.1rem 0.1rem;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!!!!!*/
+
+footer{
+    background-color: #3936f3 ; 
+}
+
+.container-footer{
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tittle-footer{
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tittle-footer h4{
+    font-size: 2rem;
+    color: white;
+}
+
+.tittle-footer p{
+    font-size: 1.5rem;
+    color: white;
+}
